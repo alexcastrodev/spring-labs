@@ -1,0 +1,1 @@
+cd 16-annotations && ../mvnw test -Dtest=RewardNetworkTests
