@@ -55,8 +55,7 @@ public class AccountClientTests {
 	@Test
 	public void createAccount() {
 		// Use a unique number to avoid conflicts
-		String number = String.format("12345%4d", random.nextInt(10000));
-		Account account = new Account(number, "John Doe");
+		Account account = new Account("14", "John Doe");
 		account.addBeneficiary("Jane Doe");
 		
 		//	TODO-08: Create a new Account
