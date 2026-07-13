@@ -4,6 +4,7 @@ import accounts.AccountManager;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
+import org.mockito.Mock;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 import org.springframework.boot.test.mock.mockito.MockBean;
@@ -30,6 +31,7 @@ public class AccountControllerBootTests {
 	private MockMvc mockMvc;
 
 	// TODO-09: Create AccountManager mock bean using @MockBean annotation
+	//	@Mock --> This will not going to application context
 	@MockBean
 	private AccountManager accountManager;
 
